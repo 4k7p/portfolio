@@ -1,20 +1,32 @@
-<div class="profile">
-  <div class="photo"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/764024/profile/profile-512.jpg"/></div>
-  <div class="content">
-    <div class="text">
-      <h3>Kelly Chen</h3>
-      <h6>Front-end Web Designer</h6>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="profile">
+        <div class="photo"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/764024/profile/profile-512.jpg"/></div>
+        <div class="content">
+        <div class="text">
+            <h3>Kelly Chen</h3>
+            <h6>Front-end Web Designer</h6>
+        </div>
+        <div class="btn"><span></span></div>
+        </div>
+        <div class="box"><i class="fa fa-codepen"></i><i class="fa fa-facebook"></i><i class="fa fa-github"></i><i class="fa fa-tumblr"></i><i class="fa fa-twitter"></i></div>
     </div>
-    <div class="btn"><span></span></div>
-  </div>
-  <div class="box"><i class="fa fa-codepen"></i><i class="fa fa-facebook"></i><i class="fa fa-github"></i><i class="fa fa-tumblr"></i><i class="fa fa-twitter"></i></div>
-</div>
-<script>
-(function() {
+    <script>
+        (function() {
   $('.btn').click(function() {
     $(this).toggleClass('active');
     return $('.box').toggleClass('open');
   });
 
 }).call(this);
-</script>
+    </script>
+</body>
+</html>
