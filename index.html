@@ -9,3 +9,12 @@
   </div>
   <div class="box"><i class="fa fa-codepen"></i><i class="fa fa-facebook"></i><i class="fa fa-github"></i><i class="fa fa-tumblr"></i><i class="fa fa-twitter"></i></div>
 </div>
+<script>
+(function() {
+  $('.btn').click(function() {
+    $(this).toggleClass('active');
+    return $('.box').toggleClass('open');
+  });
+
+}).call(this);
+</script>
